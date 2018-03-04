@@ -105,11 +105,6 @@ header{
 	z-index: 2;
 }
 
-.navigation3 div, .navigation3 p{
-		background-color: rgba(225,225,225,0.7);
-		border-radius: 10px;
-}
-
 .navigation4{
 	width: 100%;
 	position: relative;
@@ -251,7 +246,7 @@ header{
 
 .myProjects{
 	margin: 0 0;
-	padding: 20px;
+	padding: 20px 20px 50px 20px;
 	min-height: 100vh;
 	background-color: white; /*#f1c930;*/
 	z-index: 2;
@@ -358,7 +353,7 @@ button:hover{
 	font-size: 17px;
 	margin: auto;
 	height: 100%;
-}
+} 
 
 .round div:hover .overText{
 	visibility: visible;
@@ -375,26 +370,84 @@ p button{
     border-radius: 20px;
 }
 
-#Presentations{
-	background-color: grey;
+#Presentations .headingl, #Presentations .headingr{
+	font-family: 'Arvo', serif;
+	padding: 20px;
+	color: rgba(0,0,0,0.75);
 }
 
 .myProjects .left{
-	width: 50%
+	background-color: rgba(220,220,220,0.8);
+	border-radius: 20px 0 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	font-size: 35px;
 }
 
 .myProjects .right{
-	width: 50%
+	background-color: lightblue;
+	border-radius: 0 20px 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+	font-size: 35px;
+}
+
+#Presentations .left:hover{
+	cursor: pointer;
+	transform: scale(1.07);
+}
+
+#Presentations .left:hover .headingl{
+	font-size: 1.4em;
+	text-shadow: 0 0.5px 0 #ccc, 
+				0 1px 0 #c9c9c9,
+				0 1.5px 0 #bbb,
+				0 2px 0 #b9b9b9,
+				0 2.5px 0 #aaa,
+				0 3px 0.5px rgba(0,0,0,.1),
+				0 0 2.5px rgba(0,0,0,.1),
+				0 0.5px 1.5px rgba(0,0,0,.3),
+				0 1.5px 2.5px rgba(0,0,0,.2),
+				0 2.5px 5px rgba(0,0,0,.25),
+				0 5px 5px rgba(0,0,0,.2),
+				0 10px 10px rgba(0,0,0,.15);
+}
+
+#Presentations .right:hover{
+	cursor: pointer;
+	transform: scale(1.07);
+}
+
+#Presentations .right:hover .headingr{
+	font-size: 1.5em;
+	text-shadow: 0 0.5px 0 #ccc, 
+				0 1px 0 #c9c9c9,
+				0 1.5px 0 #bbb,
+				0 2px 0 #b9b9b9,
+				0 2.5px 0 #aaa,
+				0 3px 0.5px rgba(0,0,0,.1),
+				0 0 2.5px rgba(0,0,0,.1),
+				0 0.5px 1.5px rgba(0,0,0,.3),
+				0 1.5px 2.5px rgba(0,0,0,.2),
+				0 2.5px 5px rgba(0,0,0,.25),
+				0 5px 5px rgba(0,0,0,.2),
+				0 10px 10px rgba(0,0,0,.15);
 }
 
 .mySuccess{
 	padding: 0;
 	margin: 0;
 	min-height: 100vh;
-	background-image: url(images/apps01.jpg);
+	/*background-image: url(images/XYZ.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 	z-index: 30;
 }
 
