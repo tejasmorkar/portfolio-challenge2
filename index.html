@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Tian-Yuan Zhao</title>
+		<title>Tian-Yuan Zhao</title> 
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel="stylesheet" type="text/css" href="navigation/navigation.css">
 		<link rel="stylesheet" type="text/css" href="progressBar/progressBar.css">
 		<link rel="stylesheet" type="text/css" href="wallOfProjects/wall.css">
 		<link href="https://fonts.googleapis.com/css?family=Acme|Arvo|Berkshire+Swash|Bree+Serif|Gloria+Hallelujah|Pacifico|Patua+One|Shadows+Into+Light|Shrikhand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
 	</head>
 	<body>
 		<div class="progressContainer">
@@ -14,14 +15,46 @@
 			</div>
 		</div>
 
-		<header  id="top">
+		<nav id="navigation" class="navigation">
+			<a href="#top"> <img id="goToTop" class="arrows" src="images/arrowUp00.png" title="Arrow Up" alt="Arrow Up">
+			<p>|</p>
+			<div class="nav">
+				<a id="nav2" href="designProcess.html">
+					<!-- <div class="my">MY</div> -->
+					Design Process
+				</a>
+			</div>
+			<p>|</p>
+			<div  class="nav">
+				<a id="nav1" href="#myProjects">
+					<!-- <div class="my">MY</div> -->
+					Projects
+				</a>
+			</div>				
+			<p>|</p>
+			<div class="nav">
+				<a id="nav3" href="#mySuccess">
+					<!-- <div class="my">MY</div> -->
+					My Success
+				</a>
+			</div>
+			<p>|</p>
+			<div class="nav">
+				<a id="nav4" href="#aboutMe">
+					<!-- <div class="my">MY</div> -->
+					About Me
+				</a>
+			</div>
+		</nav>
+
+		<header id="top">
 			<img id="myPic" class="myPic" src="images/Me00.png" alt="This Is Me!" title="This Is Me!">
 
 			<div id="intro" class="intro">
 				<p class="name">Tian-Yuan Zhao</p>
 				<p class="profession">- Product Designer</p>
 				<br>
-				<p class="tagline">I make heavenly UX come alive<br> thus enabling greater wealth for U and I.</p>
+				<p class="tagline" id="tagline">I make heavenly UX come alive<br> thus enabling greater wealth for U and I.</p>
 			</div>
 
 			<div id="bg-icons" class="bg-icons">
@@ -34,341 +67,260 @@
 				<img class="icons" src="images/camera00.png" id="camera" width="100px">
 			</div>
 		</header>
-		<nav id="nav-1" class="navigation1">
-				<p>|</p>
-				<div class="nav">
-					<a href="#myProjects">
-						<!-- <div class="my">MY</div> -->
-						Projects
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a href="designProcess.html">
-						<!-- <div class="my">MY</div> -->
-						Design Process
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a href="#mySuccess">
-						<!-- <div class="my">MY</div> -->
-						My Success
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a href="#aboutMe">
-						<!-- <div class="my">MY</div> -->
-						About Me
-					</a>
-				</div>
-				<div class="goTo">
-					<a href="#myProjects"><img class="arrow" src="images/arrowDown00.png" title="Go Down" alt="Go Down"></a>
-				</div>
-			</nav>
 
-		<div class="myProjects" id="myProjects">
-			<nav class="navigation2">
-				<p>|</p>
-				<div class="nav">
-					<a  id="active-1" href="#myProjects">
-						<!-- <div class="my">MY</div> -->
-						Projects
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a href="designProcess.html">
-						<!-- <div class="my">MY</div> -->
-						Design Process
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a href="#mySuccess">
-						<!-- <div class="my">MY</div> -->
-						My Success
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a href="#aboutMe">
-						<!-- <div class="my">MY</div> -->
-						About Me
-					</a>
-				</div>
-					<a href="#top"><img class="arrow" src="images/arrowUp00.png" title="Go Up" alt="Go Up"></a>
-					<a href="#mySuccess"><img class="arrow" src="images/arrowDown00.png" title="Go Down" alt="Go Down"></a> 
-			</nav>
+		<div class="bg" id="myProjects">
+			<div class="hd" id="hdMyProjects">
+				<a href="#myProjects"> <img class="anch" src="images/arrowDown00.png" title="Arrow Down" alt="Arrow Down"> </a>
+			</div>
+			<div class="myProjects">
+				<div class="wall">
+					<div class="tab1">
+						<button id="first" class="tab1links" onclick="activate(event, 'Main Projects')">Main Projects</button>
+						<button class="tab1links" onclick="activate(event, 'Side-Hustles')">Side-Hustles</button>
+						<button class="tab1links" onclick="activate(event, 'Presentations')">Presentations</button>
+					</div>
 
-			<div class="wall">
-				<div class="tab1">
-					<button id="first" class="tab1links" onclick="activate(event, 'Main Projects')">Main Projects</button>
-					<button class="tab1links" onclick="activate(event, 'Side-Hustles')">Side-Hustles</button>
-					<button class="tab1links" onclick="activate(event, 'Presentations')">Presentations</button>
-				</div>
-
-				<div id="Main Projects" class="tab1content round">
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/emerge00.png" alt="emerge" title="emerge">
-							<p class="overText">
-								<span style="font-weight: bolder; font-size: 1.1em">Emerge </span> is a social enterprise and venture studio that leverages blockchain to create socio-economic inclusion for emerging market and diaspora communities around the world. The team is made up of diaspora entrepreneurs familiar with the struggles of building businesses in our home and adopted countries.<br>
-								Check Out More About The Project!
-								<a href="comingSoon.html" target="blank"><button class=" active">Case Study</button></a>
-							</p>
-						</div>
-					</span>
-
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/belt00.png" alt="belt" title="belt">
-							<p class="overText">
-								<span style="font-weight: bolder; font-size: 1.1em">Belt </span> is a fintech app which allows you to seamlessly make microinvestments into Bitcoin, Ether, or Litecoin (for now) with your spare change (round-up, top-up, or percentage of every transaciton you make). Check out the case-study for Belt and please ask at the Digital Product School to better understand this project’s context.
-								<a href="comingSoon.html" target="blank"><button class=" active">Case Study</button></a>
-							</p>
-						</div>
-					</span>
-
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/saveforward00.png" alt="saveforward" title="saveforward">
-							<p class="overText">
-								<span style="font-weight: bolder; font-size: 1.1em">Saveforward </span> is a social-enterprise all about enabling people to make a social impact by loaning small amounts of money they would’ve otherwise spent on everyday consumer products. Saveforward is a part of TakingItGlobal’s Sprout Fellowship. Have a glance at the case study from the given link to understand more about it.
-								<a href="comingSoon.html" target="blank"><button class=" active">Case Study</button></a>
-							</p>
-						</div>
-					</span>
-
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/hivewire00.png" alt="hivewire" title="hivewire">
-							<p class="overText">
-								<span style="font-weight: bolder; font-size: 1.1em">Hivewire </span> develops custom crowdfunding platforms that are specifically aligned with their client’s strategic objectives, and built to address their needs from the ground up.<br>
-								<span style="display: inline-flex; flex-direction: row; justify-content: center; align-items: center;">
-									<span style="color: #f66868; font-weight: bolder">SmartNvest:</span>
-									<a href="https://marvelapp.com/3cff42h/screen/30872533" target="blank"><button class=" active">Prototype</button></a>
-								</span>
-								<span style="display: inline-flex; flex-direction: row; justify-content: center; align-items: center;">
-									<span style="margin: 15px 0 0 0; color: #f66868; font-weight: bolder">Re/Crowd: </span>
-									<a href="https://medium.com/@tosfan4ever/case-study-hivewire-re-crowd-dd21e95982df" target="blank"> <br><button class=" active">Case-study</button></a>
-								</span>
-							</p>
-						</div>
-					</span>
-
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/dccper00.png" alt="dccper" title="dccper">
-							<p class="overText">
-								<span style="font-weight: bolder; font-size: 1.1em">DCCPER </span> is a social enterprise and venture studio that leverages blockchain to create socio-economic inclusion for emerging market and diaspora communities around the world. The team is made up of diaspora entrepreneurs familiar with the struggles of building businesses in our home and adopted countries.								
-								Check Out More About The Project!
-								<a href="comingSoon.html" target="blank"><button class=" active">Case Study</button></a>
-							</p>
-						</div>
-					</span>
-				</div>
-
-				<div id="Side-Hustles" class="tab1content round">
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/comingSoon00.png" alt="UXelerate" title="UXelerate">
-							<p class="overText">
-							    <span style="font-weight: bolder; font-size: 1.1em">UXelerate</span>is a fellowship program for intermediate-level product designers looking to make social impact
-								<a href="comingSoon.html" target="blank"> <button class=" active">Coming Soon</button> </a>
-							</p>
-						</div>
-					</span>
-
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/comingSoon02.png" alt="Silly Valley" title="Silly Valley">
-							<p class="overText">
-							    <span style="font-weight: bolder; font-size: 1.1em">Silly Valley</span> a multimedia project that’s all about satirizing the worlds of entrepreneurship and entertainment
-								<a href="comingSoon.html" target="blank"> <button class=" active">Coming Soon</button> </a>
-							</p>
-						</div>
-					</span>
-
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/etherisc00.png" alt="etherisc" title="etherisc">
-							<p class="overText">
-							    The award-winning blockchain and insuritech company known as “Etherisc” helps in Building decentralized insurance applications, Making the purchase and sale of insurance more efficient, Enablig lower operational costs and Increasing transparency and fairness of insurance
-								Check Out More About The Project!
-								<a href="https://www.behance.net/gallery/60196109/Etherisc-Landing-Page-Redesign" target="blank"> <button class=" active">Full View</button> </a>
-							</p>
-						</div>
-					</span>
-
-					<span class="divAlign1">
-						<div class="img_wrap">
-							<img id="imga1" src="images/niko00.png" alt="niko" title="niko">
-							<p class="overText">
-								Niko is a blockchain company based out of Niagara, Canada. (this project is still under construction, no website yet)
-								<a href="comingSoon.html" target="blank"><button class=" active">Full View</button></a>
-							</p>
-						</div>
-					</span>
-				</div>
-
-				<div id="Presentations" class="tab1content round">
-					<span class="left">
-						<span class="headingl"> Speaking Engagements</span>
-						<span class="divAlign1 left1">
+					<div id="Main Projects" class="tab1content round">
+						<span class="divAlign1">
 							<div class="img_wrap">
-								<img id="imga1" src="images/podCam00.png" alt="PodCam2018" title="PodCam2018">
-								<p class="overText">
-								    At <span style="font-weight: bolder; font-size: 1.1em">PodCam 2018</span>  I spoke about blockchain and circular design/economy.
-									<a href="http://2018.podcamptoronto.com/sessions/circular-design-economy-blockchain/" target="blank"> <button class=" active">Check Out</button> </a>
+								<img id="imga1" src="images/emerge00.png" alt="emerge" title="emerge">
+								<p class="overText"  style="font-size: 1em">
+									<span style="font-weight: bolder; font-size: 1.1em">Emerge </span> is a social enterprise and venture studio that leverages blockchain to create socio-economic inclusion for emerging market and diaspora communities around the world. The team is made up of diaspora entrepreneurs familiar with the struggles of building businesses in our home and adopted countries.<br>
+									Check Out More About The Project!
+									<a href="comingSoon.html" target="blank"><button class=" active">Case Study</button></a>
 								</p>
 							</div>
 						</span>
-						<span class="divAlign1 left1">
+
+						<span class="divAlign1">
 							<div class="img_wrap">
-								<img id="imga1" src="images/comingSoon01.png" alt="Rotaract eClub 7070" title="Rotaract eClub 7070">
+								<img id="imga1" src="images/belt00.png" alt="belt" title="belt">
 								<p class="overText">
-								    <span style="font-weight: bolder; font-size: 1.1em">New talks coming soon!</span>
-									<a href="comingSoon.html" target="blank"> <button class=" active">Check Out</button> </a>
+									<span style="font-weight: bolder; font-size: 1.1em">Belt </span> is a fintech app which allows you to seamlessly make microinvestments into Bitcoin, Ether, or Litecoin (for now) with your spare change (round-up, top-up, or percentage of every transaciton you make). Check out the case-study for Belt and please ask at the Digital Product School to better understand this project’s context.
+									<a href="comingSoon.html" target="blank"><button class=" active">Case Study</button></a>
 								</p>
 							</div>
 						</span>
-					</span>
-					<span class="right">
-						<span class="headingr"> Performances</span>
-						<span class="divAlign1 right1">
+
+						<span class="divAlign1">
 							<div class="img_wrap">
-								<img id="imga1" src="images/rotaract00.png" alt="Rotaract eClub 7070" title="Rotaract eClub 7070">
+								<img id="imga1" src="images/saveforward00.png" alt="saveforward" title="saveforward">
 								<p class="overText">
-								    <span style="font-weight: bolder; font-size: 1.1em">Rotaract eClub 7070</span> I’ll be giving a virtual meeting all about blockchain and cryptocurrency
-									<a href="https://www.facebook.com/rotaracteclub7070/photos/a.1268019246555387.1073741828.1254580257899286/1822488094441830/?type=3&theater" target="blank"> <button class=" active">Check Out</button> </a>
+									<span style="font-weight: bolder; font-size: 1.1em">Saveforward </span> is a social-enterprise all about enabling people to make a social impact by loaning small amounts of money they would’ve otherwise spent on everyday consumer products. Saveforward is a part of TakingItGlobal’s Sprout Fellowship. Have a glance at the case study from the given link to understand more about it.
+									<a href="comingSoon.html" target="blank"><button class=" active">Case Study</button></a>
 								</p>
 							</div>
 						</span>
-						<span class="divAlign1 right1">
+
+						<span class="divAlign1">
 							<div class="img_wrap">
-								<img id="imga1" src="images/theRoyalJungle00.png" alt="The Royal Jungle" title="The Royal Jungle">
+								<img id="imga1" src="images/hivewire00.png" alt="hivewire" title="hivewire">
 								<p class="overText">
-								    <span style="font-weight: bolder; font-size: 1.1em">The Royal Jungle</span> I’ll be a moderator for a panel of blockchain experts
-									<a href="http://www.theroyaljungle.com/" target="blank"> <button class=" active">Check Out</button> </a>
+									<span style="font-weight: bolder; font-size: 1.1em">Hivewire </span> develops custom crowdfunding platforms that are specifically aligned with their client’s strategic objectives, and built to address their needs from the ground up.<br>
+									<span style="display: inline-flex; flex-direction: row; justify-content: center; align-items: center;">
+										<span style="color: #f66868; font-weight: bolder">SmartNvest:</span>
+										<a href="https://marvelapp.com/3cff42h/screen/30872533" target="blank"><button class=" active">Prototype</button></a>
+									</span>
+									<span style="display: inline-flex; flex-direction: row; justify-content: center; align-items: center;">
+										<span style="margin: 15px 0 0 0; color: #f66868; font-weight: bolder">Re/Crowd: </span>
+										<a href="https://medium.com/@tosfan4ever/case-study-hivewire-re-crowd-dd21e95982df" target="blank"> <br><button class=" active">Case-study</button></a>
+									</span>
 								</p>
 							</div>
 						</span>
-						<span class="divAlign1 left1">
+
+						<span class="divAlign1">
 							<div class="img_wrap">
-								<img id="imga1" src="images/comingSoon02.png" alt="ComingSoon" title="ComingSoon">
-								<p class="overText">
-								    <span style="font-weight: bolder; font-size: 1.1em">New talks coming soon!</span>
-									<a href="comingSoon.html" target="blank"><button class=" active">Coming Soon</button> </a>
+								<img id="imga1" src="images/dccper00.png" alt="dccper" title="dccper">
+								<p class="overText" style="font-size: 1em">
+									<span style="font-weight: bolder; font-size: 1.1em">DCCPER </span> is a social enterprise and venture studio that leverages blockchain to create socio-economic inclusion for emerging market and diaspora communities around the world. The team is made up of diaspora entrepreneurs familiar with the struggles of building businesses in our home and adopted countries.								
+									Check Out More About The Project!
+									<a href="comingSoon.html" target="blank"><button class=" active">Case Study</button></a>
 								</p>
 							</div>
 						</span>
-					</span>
+					</div>
+
+					<div id="Side-Hustles" class="tab1content round">
+						<span class="divAlign1">
+							<div class="img_wrap">
+								<img id="imga1" src="images/comingSoon00.png" alt="UXelerate" title="UXelerate">
+								<p class="overText">
+								    <span style="font-weight: bolder; font-size: 1.1em">UXelerate</span>is a fellowship program for intermediate-level product designers looking to make social impact
+									<a href="comingSoon.html" target="blank"> <button class=" active">Coming Soon</button> </a>
+								</p>
+							</div>
+						</span>
+
+						<span class="divAlign1">
+							<div class="img_wrap">
+								<img id="imga1" src="images/comingSoon02.png" alt="Silly Valley" title="Silly Valley">
+								<p class="overText">
+								    <span style="font-weight: bolder; font-size: 1.1em">Silly Valley</span> a multimedia project that’s all about satirizing the worlds of entrepreneurship and entertainment
+									<a href="comingSoon.html" target="blank"> <button class=" active">Coming Soon</button> </a>
+								</p>
+							</div>
+						</span>
+
+						<span class="divAlign1">
+							<div class="img_wrap">
+								<img id="imga1" src="images/etherisc00.png" alt="etherisc" title="etherisc">
+								<p class="overText">
+								    <span style="font-weight: bolder; font-size: 1.1em">Etherisc</span>The award-winning blockchain and insuritech company known as “Etherisc” helps in Building decentralized insurance applications, Making the purchase and sale of insurance more efficient, Enablig lower operational costs and Increasing transparency and fairness of insurance
+									Check Out More About The Project!
+									<a href="https://www.behance.net/gallery/60196109/Etherisc-Landing-Page-Redesign" target="blank"> <button class=" active">Full View</button> </a>
+								</p>
+							</div>
+						</span>
+
+						<span class="divAlign1">
+							<div class="img_wrap">
+								<img id="imga1" src="images/niko00.png" alt="niko" title="niko">
+								<p class="overText">
+									<span style="font-weight: bolder; font-size: 1.1em">Niko</span> is a blockchain company based out of Niagara, Canada. (this project is still under construction, no website yet)
+									<a href="comingSoon.html" target="blank"><button class=" active">Full View</button></a>
+								</p>
+							</div>
+						</span>
+					</div>
+
+					<div id="Presentations" class="tab1content round">
+						<span class="left">
+							<span class="headingl"> Speaking Engagements</span>
+							<span class="divAlign1 left1">
+								<div class="img_wrap">
+									<img id="imga1" src="images/podCam00.png" alt="PodCam2018" title="PodCam2018">
+									<p class="overText">
+									    At <span style="font-weight: bolder; font-size: 1.1em">PodCam 2018</span>  I spoke about blockchain and circular design/economy.
+										<a href="http://2018.podcamptoronto.com/sessions/circular-design-economy-blockchain/" target="blank"> <button class=" active">Check Out</button> </a>
+									</p>
+								</div>
+							</span>
+							<span class="divAlign1 left1">
+								<div class="img_wrap">
+									<img id="imga1" src="images/comingSoon01.png" alt="Rotaract eClub 7070" title="Rotaract eClub 7070">
+									<p class="overText">
+									    <span style="font-weight: bolder; font-size: 1.1em">New talks coming soon!</span>
+										<a href="comingSoon.html" target="blank"> <button class=" active">Check Out</button> </a>
+									</p>
+								</div>
+							</span>
+						</span>
+						<span class="right">
+							<span class="headingr"> Performances</span>
+							<span class="divAlign1 right1">
+								<div class="img_wrap">
+									<img id="imga1" src="images/rotaract00.png" alt="Rotaract eClub 7070" title="Rotaract eClub 7070">
+									<p class="overText">
+									    <span style="font-weight: bolder; font-size: 1.1em">Rotaract eClub 7070</span> I’ll be giving a virtual meeting all about blockchain and cryptocurrency
+										<a href="https://www.facebook.com/rotaracteclub7070/photos/a.1268019246555387.1073741828.1254580257899286/1822488094441830/?type=3&theater" target="blank"> <button class=" active">Check Out</button> </a>
+									</p>
+								</div>
+							</span>
+							<span class="divAlign1 right1">
+								<div class="img_wrap">
+									<img id="imga1" src="images/theRoyalJungle00.png" alt="The Royal Jungle" title="The Royal Jungle">
+									<p class="overText">
+									    <span style="font-weight: bolder; font-size: 1.1em">The Royal Jungle</span> I’ll be a moderator for a panel of blockchain experts
+										<a href="http://www.theroyaljungle.com/" target="blank"> <button class=" active">Check Out</button> </a>
+									</p>
+								</div>
+							</span>
+							<span class="divAlign1 left1">
+								<div class="img_wrap">
+									<img id="imga1" src="images/comingSoon02.png" alt="ComingSoon" title="ComingSoon">
+									<p class="overText">
+									    <span style="font-weight: bolder; font-size: 1.1em">New performances coming soon!</span>
+										<a href="comingSoon.html" target="blank"><button class=" active">Coming Soon</button> </a>
+									</p>
+								</div>
+							</span>
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="mySuccess" id="mySuccess">
-			<div class="!overlay">
-				<nav class="navigation3">
-						<p>|</p>
-						<div class="nav">
-							<a href="#myProjects">
-								<!-- <div class="my">MY</div> -->
-								Projects
-							</a>
-						</div>
-						<p>|</p>
-						<div class="nav">
-							<a href="designProcess.html">
-								<!-- <div class="my">MY</div> -->
-								Design Process
-							</a>
-						</div>
-						<p>|</p>
-						<div class="nav">
-							<a id="active-3" href="#mySuccess">
-								<!-- <div class="my">MY</div> -->
-								My Success
-							</a>
-						</div>
-						<p>|</p>
-						<div class="nav">
-							<a href="#aboutMe">
-								<!-- <div class="my">MY</div> -->
-								About Me
-							</a>
-						</div>
-						<a href="#myProjects"><img class="arrow" src="images/arrowUp00.png" title="Go Up" alt="Go Up"></a>
-						<a href="#aboutMe"><img class="arrow" src="images/arrowDown00.png" title="Go Down" alt="Go Down"></a>
-					</nav>
-
+		<div class="bgcolour" id="mySuccess">
+			<div class="hd" id="hdMySuccess">
+				<a href="#mySuccess"><img class="anch" src="images/arrowDown00.png" title="Arrow Down" alt="Arrow Down"></a>
+			</div>
+			<div class="mySuccess">
 				<div class="acheivments round">
-						<div><img id="imga1" src="images/a16z00.png" alt="A16Z"></div>
-						<div><img id="imga2" src="images/skillshare00.png" alt="SkillShare"></div>
-						<div><img id="imga3" src="images/myPlanet00.png" alt="My Planet"></div>
-						<div><img id="imga4" src="images/uxpa00.png" alt="UXPA"></div>
-						<div><img id="imga5" src="images/next3600.png" alt="FaceBook"></div>
-						<div><img id="imga5" src="images/facebook00.png" alt="FaceBook"></div>
+						<div>
+							<img id="imga1" src="images/a16z00.png" alt="A16Z" title="A16Z">
+							<p class="overText">
+							    <span style="font-weight: bolder; font-size: 1.1em">Andreessen Horowitz</span> is a Silicon Valley-based venture capital firm with $4.2 billion under management. a16z Generation Design (Gen.D) is a part-time mentorship program for junior designers to connect with design professionals from leading tech companies and agencies. This is a 6-month program starting January 2018.
+								<a href="https://a16z.com/" target="blank"> <button class=" active">A16Z SITE</button> </a>
+							</p>
+						</div>
+						<div>
+							<img id="imga2" src="images/skillshare00.png" alt="SkillShare" title="SkillShare">
+							<p class="overText">
+							    <span style="font-weight: bolder; font-size: 1.1em">Skillshare</span> is an online learning community with thousands of classes in design, business, technology and more. Anyone can join the millions of members in our community to learn cutting-edge skills, network with peers and discover new opportunities. I was personally invited by them to upload a course on product design.
+								<a href="https://www.skillshare.com/site/join?teacherRef=6590634&via=teacher-referral&utm_campaign=teacher-referral&utm_source=ShortUrl&utm_medium=teacher-referral&t=Digital-Product-Design&sku=850037778" target="blank"> <button class=" active">THE COURSE</button> </a>
+							</p>
+						</div>
+						<div>
+							<img id="imga3" src="images/myPlanet00.png" alt="My Planet" title="My Planet">
+							<p class="overText">
+							    <span style="font-weight: bolder; font-size: 1.1em">My Planet</span>I was accepted into a 10-day tech-focused intensive program in partnership with IBM. This selective 2017 fellowship cohort received real, hands-on experience with agile, applied Al in the real world, and worked with the latest development platforms. We were paired up with the Toronto Public Library.
+								<a href="https://medium.com/@tosfan4ever/case-study-myplanet-fellowship-d5f0541c4b6f" target="blank"> <button class=" active">READ IT</button> </a>
+							</p>
+						</div>
+						<div>
+							<img id="imga4" src="images/uxpa00.png" alt="UXPA" title="UXPA">
+							<p class="overText">
+							    <span style="font-weight: bolder; font-size: 1.1em">The UXPA</span> is an international industry-based organization that supports people who research, design, and evaluate the user experience (UX) of products and services. I was recently interviewed by the head of Toronto chapter — Frank Goertzen in order to be profiled/featured in their internal communications.
+								<a href="http://uxpa.org/" target="blank"> <button class=" active">UPXA SITE</button> </a>
+							</p>
+						</div>
+						<div>
+							<img id="imga5" src="images/next3600.png" alt="Next36" title="Next36">
+							<p class="overText" style="font-size: 1em">
+							    <span style="font-weight: bolder; font-size: 1.1em">The Next 36</span>I was accepted as a finalist into a high-selective program that accelerates the growth of Canada’s most talented young entrepreneurs by providing mentorship, capital, and unparalleled founder development. 36 young Canadian innovators and challenge are chosen to build a new business venture or iterate and scale an existing idea with enormous potential.
+								<a href="http://www.theroyaljungle.com/" target="blank"> <button class=" active">NEXT36 SITE</button> </a>
+							</p>
+						</div>
+						<div>
+							<img id="imga5" src="images/facebook00.png" alt="FaceBook" title="Facebook">
+							<p class="overText">
+							    <span style="font-weight: bolder; font-size: 1.1em">Facebook</span> I was recently invited to this exclusive product design community called “Elegant Tools” by recruiters from Facebook. This community includes people from all over the world including the original founders of Teehan+Lax, a top-notch digital agency in Toronto that got acquired by Facebook.
+								<a href="http://www.theroyaljungle.com/" target="blank"> <button class=" active">"ELEGANT TOOLS"</button> </a>
+							</p>
+						</div>
 				</div>
 			</div>
 		</div>	
 
-		<div id="aboutMe" class="aboutMe">
-			<nav class="navigation4">
-				<p>|</p>
-				<div class="nav">
-					<a href="#myProjects">
-						<!-- <div class="my">MY</div> -->
-						Projects
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a href="designProcess.html">
-						<!-- <div class="my">MY</div> -->
-						Design Process
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a href="#mySuccess">
-						<!-- <div class="my">MY</div> -->
-						My Success
-					</a>
-				</div>
-				<p>|</p>
-				<div class="nav">
-					<a   id="active-4" href="#aboutMe">
-						<!-- <div class="my">MY</div> -->
-						About Me
-					</a>
-				</div>
-					<a href="#mySuccess"><img class="arrow" src="images/arrowUp00.png" title="Go Up" alt="Go Up"></a>
-			</nav>
-
-			<div class="myself">
-				<div class="cols">
-					<div id=container>
-						<span>Ultimately,<br> my greatest value proposition is that</span>
-						<div id=flip>
-						<div><div style="border-radius: 10px">I'm</div></div>
-						<div><div style="border-radius: 10px">Not An Entrepreneur</div></div>
-						<div><div style="border-radius: 15px">An Intrepreneur</div></div>
+		<div class="bgcolour" id="aboutMe">
+			<div class="hd" id="hdAboutMe">
+				<a href="#aboutMe"><img class="anch" src="images/arrowDown00.png" title="Arrow Down" alt="Arrow Down"></a>
+			</div>
+			<div class="aboutMe">
+				<div class="myself">
+					<div class="cols">
+						<div id=container>
+							<span>Ultimately,<br> my greatest value proposition is that</span>
+							<div id=flip>
+							<div><div style="border-radius: 10px">I'm</div></div>
+							<div><div style="border-radius: 10px">Not An Entrepreneur</div></div>
+							<div><div style="border-radius: 15px">An Intrepreneur</div></div>
+							</div>
 						</div>
+						<p>
+							"I love product design, blockchain, and social innovation aspiring to become a digital engineer - someone who lies at the cross-section of data, design, and development. I'm a lifelong learner, passionate about exponential-thinking, design-thinking, and systems-thinking. I am what you may call an "innovation-thinker". I'm also a writer, singer, pianist - artist and performer overall; a comforter, philosopher, and lifelong mate. At the end of the day I'm young, scrappy, and hungry makin' it in the big city of the 6ix.”
+						</p>
 					</div>
-					<p>
-						"I love product design, blockchain, and social innovation aspiring to become a digital engineer - someone who lies at the cross-section of data, design, and development. I'm a lifelong learner, passionate about exponential-thinking, design-thinking, and systems-thinking. I am what you may call an "innovation-thinker". I'm also a writer, singer, pianist - artist and performer overall; a comforter, philosopher, and lifelong mate. At the end of the day I'm young, scrappy, and hungry makin' it in the big city of the 6ix.”
-					</p>
-				</div>
 
-				<div id="mypic" class="lastPicDiv">
-					<img class="myPicLast" src="images/Me00.png" alt="This Is Me!" title="This Is Me!">
+					<div id="mypic" class="lastPicDiv">
+						<img class="myPicLast" src="images/Me00.png" alt="This Is Me!" title="This Is Me!">
+					</div>
 				</div>
 			</div>
 		</div>
 
+		<script src="navigation/navigation.js"></script>
 		<script src="progressBar/progressBar.js"></script>
 		<script src="activeTab/activeTab.js"></script>
 	</body>

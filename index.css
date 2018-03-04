@@ -8,20 +8,56 @@ font-family: 'Acme', sans-serif;
 >>> font-family: 'Berkshire Swash', cursive;
 >>>>> font-family: 'Gloria Hallelujah', cursive;
 > font-family: 'Shrikhand', cursive;
+
+font-family: 'Expletus Sans', cursive;
 */
 
 *{
 	margin: 0;
-}
+} 
 
 body{
 	background-color: rgba(89, 171, 227, 0.65); /*rgba(191, 191, 191, 0);*/
 	overflow-x: hidden;
 }
 
-.overlay{
-	background-color: rgba(0,0,0,0.5);
-	z-index: 50;
+.hd{
+	font-family: 'Expletus Sans', cursive;;
+	font-size: 2em;
+	padding: 5px 0 0 0;
+	margin: 0px 10px 10px 12px;
+	color: white;
+	font-weight: bolder;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Expletus Sans', cursive;/*"Passero One", Helvetica, sans-serif;*/	
+	text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+	z-index: 200;
+}
+
+.hd:hover{
+	cursor: pointer;
+}
+
+.anch{
+	height: 45px;
+	padding: 0;
+	margin: 0;
+}
+.anch:hover{
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
+.arrow{
+	font-size: 1.2em;
+	margin: auto auto auto 10px;
 }
 
 a{
@@ -48,84 +84,30 @@ header{
 	left: 100%;
 	transform: translate(-100%);
 	bottom: 0%;
-	opacity: 0.7;
+	opacity: 1;
 	z-index: -1;
 }
 
-/*--- @NAVIGAITON ---*/
-
-.navigation1{
+.navigation{
 	position: fixed;
-	right: 2%;
-	top: 2%;
+	right: 0%;
+	top: 1%;
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	align-items: flex-start;
 	padding: 10px;
 	margin: auto;
-	font-family: 'Bree Serif', serif;
+	font-family: 'Expletus Sans', cursive;
 	font-size: 30px;
-	z-index: 0;
-}
-
-.navigation2{
+	background-color: white;
+	opacity: 0.95;
 	width: 100%;
-	position: relative;
-	right: 0%;
-	top: 2%;
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end; 
-	align-items: flex-start;
-	padding: 10px;
-	margin: auto;
-	font-family: 'Bree Serif', serif;
-	font-size: 30px;
-	z-index: 2;
+	z-index: 1;
 }
-
-.navigation3{
-	width: 100%;
-	position: relative;
-	right: 5%;
-	top: 2%;
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-items: flex-start;
-	padding: 10px 0;
-	margin: 20px;
-	height: 40px;
-	font-family: 'Bree Serif', serif;
-	font-size: 30px;
-	border-radius: 30px;
-	z-index: 2;
-}
-
-.navigation4{
-	width: 100%;
-	position: relative;
-	right: 0%;
-	top: 2%;
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end; 
-	align-items: flex-start;
-	padding: 10px;
-	margin: auto;
-	font-family: 'Bree Serif', serif;
-	font-size: 30px;
-	z-index: 2;
-}
-
-/*--- !NAVIGAITON ---*/
 
 .icons{
-	opacity: 0.5;
+	opacity: 0.9;
 	z-index: -1;
 }
 
@@ -186,8 +168,8 @@ header{
 	cursor: pointer;
 	border: none;
 	color: white;
-	font: normal 72px/normal "Passero One", Helvetica, sans-serif;
-	text-shadow: 0 1px 0 #ccc, 
+	font: normal 72px/normal 'Shadows Into Light', cursive;/*"Passero One", Helvetica, sans-serif;
+*/	text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
@@ -222,7 +204,7 @@ header{
 	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;}
 
 .tagline{
-	font-family: 'Pacifico', cursive;	
+	font-family: 'Pacifico', cursive;
 	font-size: 25px;
 }
 
@@ -245,11 +227,12 @@ header{
 }
 
 .myProjects{
-	margin: 0 0;
+	margin: 0 20px;
 	padding: 20px 20px 50px 20px;
 	min-height: 100vh;
 	background-color: white; /*#f1c930;*/
 	z-index: 2;
+	border-radius: 50px;
 }
 
 .tab1 {
@@ -260,7 +243,7 @@ header{
 button{
 	font-size: 25px;
 	color: black;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: 'Shadows Into Light', cursive;/*'Berkshire Swash', cursive;*/
 	font-weight: 900;
 }
 
@@ -283,7 +266,7 @@ button:hover{
 
 .tab1 button.active {
 	color: white;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: 'Shadows Into Light', cursive;/*'Berkshire Swash', cursive;*/
 	font-weight: 900;
 	font-size: 30px; 
     background-color: rgb(246, 104, 104);
@@ -347,7 +330,7 @@ button:hover{
 	display: inline-flex;
 	flex-direction: column;
 	justify-content: center;
-	font-family: 'Arvo', serif;
+	font-family:'Expletus Sans', cursive;/* 'Arvo', serif;*/
 	color: black;
 	text-shadow: 2px 2px white;
 	font-size: 17px;
@@ -381,7 +364,7 @@ p button{
 	border-radius: 20px 0 0 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	width: 50%;
 	font-size: 35px;
@@ -441,14 +424,20 @@ p button{
 }
 
 .mySuccess{
-	padding: 0;
+	margin: 0 20px;
+	padding: 20px 20px 50px 20px;
+	min-height: 100vh;
+	background-color: white; /*#f1c930;*/
+	z-index: 2;
+	border-radius: 50px;
+	/*padding: 0;
 	margin: 0;
 	min-height: 100vh;
-	/*background-image: url(images/XYZ.jpg);
+	background-image: url(images/XYZ.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;*/
-	z-index: 30;
+	background-attachment: fixed;
+	z-index: 30;*/
 }
 
 .acheivments{
@@ -488,16 +477,18 @@ p button{
 
 .mySuccess .round div:hover img{
 	transform: scale(0.5);
+	opacity: 0.7;
 	position: absolute;
 	top: 0%;
 }
 
 .aboutMe{
-	margin: 0 0;
+	margin: 0 20px;
 	padding: 20px;
 	min-height: 100vh;
 	background-color: white; /*#f1c930;*/
 	z-index: 2;
+	border-radius: 50px;
 }
 
 .myself{
@@ -512,7 +503,8 @@ p button{
 }
 
 #container span{
-	font-family: 'Arvo', serif;
+	font-family: 'avro', cursive;
+	line-height: 30px;
 	padding: 20px;
 	color: rgba(0,0,0,0.75);
 	text-shadow: 0 0.5px 0 #ccc, 
@@ -531,7 +523,7 @@ p button{
 }
 
 .myself p{
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Expletus Sans', cursive;
 	font-size: 25px;
 	color: grey;
 	font-weight: lighter;
