@@ -243,7 +243,7 @@ header{
 button{
 	font-size: 25px;
 	color: black;
-	font-family: 'Shadows Into Light', cursive;/*'Berkshire Swash', cursive;*/
+	font-family: 'Expletus Sans', cursive;/*'Berkshire Swash', cursive;*/
 	font-weight: 900;
 }
 
@@ -266,7 +266,7 @@ button:hover{
 
 .tab1 button.active {
 	color: white;
-	font-family: 'Shadows Into Light', cursive;/*'Berkshire Swash', cursive;*/
+	font-family: 'Expletus Sans', cursive;
 	font-weight: 900;
 	font-size: 30px; 
     background-color: rgb(246, 104, 104);
