@@ -11,7 +11,6 @@ function myFunction() {
 
 window.setInterval(function(){
 	var val = winScroll; 
-	console.log(winScroll);
 	if (val < 400) {
 		if (document.getElementById('active-1')) {
 			document.getElementById('active-1').classList.remove("active01");
