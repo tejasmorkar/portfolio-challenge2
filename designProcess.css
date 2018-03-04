@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+}
+
+body{
+	background-color: rgba(89, 171, 227, 0.65); /*rgba(191, 191, 191, 0);*/
+}
+
+.overlay{
+	background-color: rgba(0,0,0,0.5);
+	z-index: 50;
+}
+
+a{ 
+	text-decoration: none;
+	color: inherit;
+}
+
+.navigation{
+	position: fixed;
+	right: 2%;
+	top: 2%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 10px;
+	margin: auto;
+	font-family: 'Bree Serif', serif;
+	font-size: 30px;
+	z-index: 0;
+}
+
+.myDesignProcess{
+	height: 100vh;
+	padding: 15px;
+	margin: 0px 0;
+	z-index: -10;
+}

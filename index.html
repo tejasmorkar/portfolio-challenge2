@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tian-Yuan Zhao</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="navigation/navigation.css">
+		<link rel="stylesheet" type="text/css" href="progressBar/progressBar.css">
+		<link rel="stylesheet" type="text/css" href="wallOfProjects/wall.css">
+		<link href="https://fonts.googleapis.com/css?family=Acme|Arvo|Berkshire+Swash|Bree+Serif|Gloria+Hallelujah|Pacifico|Patua+One|Shadows+Into+Light|Shrikhand" rel="stylesheet">
+	</head>
+	<body>
+		<div class="progressContainer">
+			<div class="progressBar" id="myBar">
+			</div>
+		</div>
+
+		<header  id="top">
+			<img id="myPic" class="myPic" src="images/Me00.png" alt="This Is Me!" title="This Is Me!">
+
+			<div id="intro" class="intro">
+				<p class="name">Tian-Yuan Zhao</p>
+				<p class="profession">- Product Designer</p>
+				<br>
+				<p class="tagline">I make heavenly UX come alive<br> thus enabling greater wealth for U and I.</p>
+			</div>
+
+			<div id="bg-icons" class="bg-icons">
+				<img class="icons" src="images/map00.png" id="map" width="100px">
+				<img class="icons" src="images/mail00.png" id="mail" width="100px">
+				<img class="icons" src="images/file00.png" id="file" width="100px">
+				<img class="icons" src="images/cloud00.ico" id="cloud" width="100px">
+				<img class="icons" src="images/like00.png" id="like" width="100px">
+				<img class="icons" src="images/lock00.png" id="lock" width="100px">
+				<img class="icons" src="images/camera00.png" id="camera" width="100px">
+			</div>
+		</header>
+		<nav id="nav-1" class="navigation1">
+				<p>|</p>
+				<div class="nav">
+					<a href="#myProjects">
+						<!-- <div class="my">MY</div> -->
+						Projects
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a href="designProcess.html">
+						<!-- <div class="my">MY</div> -->
+						Design Process
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a href="#mySuccess">
+						<!-- <div class="my">MY</div> -->
+						My Success
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a href="#aboutMe">
+						<!-- <div class="my">MY</div> -->
+						About Me
+					</a>
+				</div>
+				<div class="goTo">
+					<a href="#myProjects"><img class="arrow" src="images/arrowDown00.png" title="Go Down" alt="Go Down"></a>
+				</div>
+			</nav>
+
+		<div class="myProjects" id="myProjects">
+			<nav class="navigation2">
+				<p>|</p>
+				<div class="nav">
+					<a  id="active-1" href="#myProjects">
+						<!-- <div class="my">MY</div> -->
+						Projects
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a href="designProcess.html">
+						<!-- <div class="my">MY</div> -->
+						Design Process
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a href="#mySuccess">
+						<!-- <div class="my">MY</div> -->
+						My Success
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a href="#aboutMe">
+						<!-- <div class="my">MY</div> -->
+						About Me
+					</a>
+				</div>
+					<a href="#top"><img class="arrow" src="images/arrowUp00.png" title="Go Up" alt="Go Up"></a>
+					<a href="#mySuccess"><img class="arrow" src="images/arrowDown00.png" title="Go Down" alt="Go Down"></a> 
+			</nav>
+
+			<div class="wall">
+				<div class="tab1">
+					<button id="first" class="tab1links" onclick="activate(event, 'Main Projects')">Main Projects</button>
+					<button class="tab1links" onclick="activate(event, 'Side-Hustles')">Side-Hustles</button>
+					<button class="tab1links" onclick="activate(event, 'Presentations')">Presentations</button>
+				</div>
+
+				<div id="Main Projects" class="tab1content round">
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/emerge00.png" alt="emerge" title="emerge">
+							<p class="overText">
+								<span style="font-weight: bolder; font-size: 1.1em">Emerge </span> is a social enterprise and venture studio that leverages blockchain to create socio-economic inclusion for emerging market and diaspora communities around the world. The team is made up of diaspora entrepreneurs familiar with the struggles of building businesses in our home and adopted countries.<br>
+								Check Out More About The Project!
+								<button class=" active">Case Study</button>
+							</p>
+						</div>
+					</span>
+
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/belt00.png" alt="belt" title="belt">
+							<p class="overText">
+								<span style="font-weight: bolder; font-size: 1.1em">Belt </span> is a fintech app which allows you to seamlessly make microinvestments into Bitcoin, Ether, or Litecoin (for now) with your spare change (round-up, top-up, or percentage of every transaciton you make). Check out the case-study for Belt and please ask at the Digital Product School to better understand this project’s context.
+								<button class=" active">Case Study</button>
+							</p>
+						</div>
+					</span>
+
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/saveforward00.png" alt="saveforward" title="saveforward">
+							<p class="overText">
+								<span style="font-weight: bolder; font-size: 1.1em">Saveforward </span> is a social-enterprise all about enabling people to make a social impact by loaning small amounts of money they would’ve otherwise spent on everyday consumer products. Saveforward is a part of TakingItGlobal’s Sprout Fellowship. Have a glance at the case study from the given link to understand more about it.
+								<button class=" active">Case Study</button>
+							</p>
+						</div>
+					</span>
+
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/hivewire00.png" alt="hivewire" title="hivewire">
+							<p class="overText">
+								<span style="font-weight: bolder; font-size: 1.1em">Hivewire </span> develops custom crowdfunding platforms that are specifically aligned with their client’s strategic objectives, and built to address their needs from the ground up.<br>
+								<span style="display: inline-flex; flex-direction: row; justify-content: center; align-items: center;">
+									SmartNvest:
+									<a href="https://marvelapp.com/3cff42h/screen/30872533"><button class=" active">Prototype</button></a>
+								</span>
+								<span style="display: inline-flex; flex-direction: row; justify-content: center; align-items: center;">
+									Re/Crowd: 
+									<a href="https://medium.com/@tosfan4ever/case-study-hivewire-re-crowd-dd21e95982df"> <br><button class=" active">Case-study</button></a>
+								</span>
+							</p>
+						</div>
+						<p class="txt"> 
+
+						</p>
+					</span>
+
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/dccper00.png" alt="dccper" title="dccper">
+							<p class="overText">
+								<span style="font-weight: bolder; font-size: 1.1em">DCCPER </span> is a social enterprise and venture studio that leverages blockchain to create socio-economic inclusion for emerging market and diaspora communities around the world. The team is made up of diaspora entrepreneurs familiar with the struggles of building businesses in our home and adopted countries.								
+								Check Out More About The Project!
+								<button class=" active">Case Study</button>
+							</p>
+						</div>
+					</span>
+				</div>
+
+				<div id="Side-Hustles" class="tab1content round">
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/comingSoon00.png" alt="UXelerate" title="UXelerate">
+							<p class="overText">
+							    <span style="font-weight: bolder; font-size: 1.1em">UXelerate</span>is a fellowship program for intermediate-level product designers looking to make social impact
+								<a href=""> <button class=" active">Coming Soon</button> </a>
+							</p>
+						</div>
+					</span>
+
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/comingsoon02.png" alt="Silly Valley" title="Silly Valley">
+							<p class="overText">
+							    The award-winning blockchain and insuritech company known as “Etherisc” helps in Building decentralized insurance applications, Making the purchase and sale of insurance more efficient, Enablig lower operational costs and Increasing transparency and fairness of insurance
+								Check Out More About The Project!
+								<a href=""> <button class=" active">Coming Soon</button> </a>
+							</p>
+						</div>
+					</span>
+
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/etherisc00.png" alt="etherisc" title="etherisc">
+							<p class="overText">
+							    The award-winning blockchain and insuritech company known as “Etherisc” helps in Building decentralized insurance applications, Making the purchase and sale of insurance more efficient, Enablig lower operational costs and Increasing transparency and fairness of insurance
+								Check Out More About The Project!
+								<a href="https://www.behance.net/gallery/60196109/Etherisc-Landing-Page-Redesign"> <button class=" active">Full View</button> </a>
+							</p>
+						</div>
+					</span>
+
+					<span class="divAlign1">
+						<div class="img_wrap">
+							<img id="imga1" src="images/niko00.png" alt="niko" title="niko">
+							<p class="overText">
+								Niko is a blockchain company based out of Niagara, Canada. (this project is still under construction, no website yet)
+								<button class=" active">Full View</button>
+							</p>
+						</div>
+					</span>
+				</div>
+
+				<div id="Presentations" class="tab1content round">
+					<span class="left">
+
+					</span>
+					<span class="right">
+
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="mySuccess" id="mySuccess">
+			<div class="overlay">
+				<nav class="navigation3">
+						<p>|</p>
+						<div class="nav">
+							<a href="#myProjects">
+								<!-- <div class="my">MY</div> -->
+								Projects
+							</a>
+						</div>
+						<p>|</p>
+						<div class="nav">
+							<a href="designProcess.html">
+								<!-- <div class="my">MY</div> -->
+								Design Process
+							</a>
+						</div>
+						<p>|</p>
+						<div class="nav">
+							<a id="active-3" href="#mySuccess">
+								<!-- <div class="my">MY</div> -->
+								My Success
+							</a>
+						</div>
+						<p>|</p>
+						<div class="nav">
+							<a href="#aboutMe">
+								<!-- <div class="my">MY</div> -->
+								About Me
+							</a>
+						</div>
+						<a href="#myProjects"><img class="arrow" src="images/arrowUp00.png" title="Go Up" alt="Go Up"></a>
+						<a href="#aboutMe"><img class="arrow" src="images/arrowDown00.png" title="Go Down" alt="Go Down"></a>
+					</nav>
+
+				<div class="acheivments round">
+						<div><img id="imga1" src="images/a16z00.png" alt="A16Z"></div>
+						<div><img id="imga2" src="images/skillshare00.png" alt="SkillShare"></div>
+						<div><img id="imga3" src="images/myPlanet00.png" alt="My Planet"></div>
+						<div><img id="imga4" src="images/uxpa00.png" alt="UXPA"></div>
+						<div><img id="imga5" src="images/next3600.png" alt="FaceBook"></div>
+						<div><img id="imga5" src="images/facebook00.png" alt="FaceBook"></div>
+				</div>
+			</div>
+		</div>	
+
+		<div id="aboutMe" class="aboutMe">
+			<nav class="navigation4">
+				<p>|</p>
+				<div class="nav">
+					<a href="#myProjects">
+						<!-- <div class="my">MY</div> -->
+						Projects
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a href="designProcess.html">
+						<!-- <div class="my">MY</div> -->
+						Design Process
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a href="#mySuccess">
+						<!-- <div class="my">MY</div> -->
+						My Success
+					</a>
+				</div>
+				<p>|</p>
+				<div class="nav">
+					<a   id="active-4" href="#aboutMe">
+						<!-- <div class="my">MY</div> -->
+						About Me
+					</a>
+				</div>
+					<a href="#mySuccess"><img class="arrow" src="images/arrowUp00.png" title="Go Up" alt="Go Up"></a>
+			</nav>
+
+			<div class="myself">
+				<div class="cols">
+					<div id=container>
+						<span>Ultimately,<br> my greatest value proposition is that</span>
+						<div id=flip>
+						<div><div style="border-radius: 10px">I'm</div></div>
+						<div><div style="border-radius: 10px">Not An Entrepreneur</div></div>
+						<div><div style="border-radius: 15px">An Intrepreneur</div></div>
+						</div>
+					</div>
+					<p>
+						"I love product design, blockchain, and social innovation aspiring to become a digital engineer - someone who lies at the cross-section of data, design, and development. I'm a lifelong learner, passionate about exponential-thinking, design-thinking, and systems-thinking. I am what you may call an "innovation-thinker". I'm also a writer, singer, pianist - artist and performer overall; a comforter, philosopher, and lifelong mate. At the end of the day I'm young, scrappy, and hungry makin' it in the big city of the 6ix.”
+					</p>
+				</div>
+
+				<div id="mypic" class="lastPicDiv">
+					<img class="myPicLast" src="images/Me00.png" alt="This Is Me!" title="This Is Me!">
+				</div>
+			</div>
+		</div>
+
+		<script src="progressBar/progressBar.js"></script>
+		<script src="activeTab/activeTab.js"></script>
+	</body>
+</html>
