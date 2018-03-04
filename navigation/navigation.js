@@ -34,9 +34,6 @@
 		if (document.getElementById('tagline')) {
 			document.getElementById('tagline').style.visibility = "visible";
 		}
-		if (document.getElementById('myPic')) {
-			document.getElementById('myPic').style.visibility = "visible";
-		}
 	} else
 	if (val >= elem1-200 && val < elem2-200) { 
 		if (document.getElementById('nav1')) {
@@ -53,9 +50,6 @@
 		}
 		if (document.getElementById('tagline')) {
 			document.getElementById('tagline').style.visibility = "hidden";
-		}
-		if (document.getElementById('myPic')) {
-			document.getElementById('myPic').style.visibility = "visible";
 		}
 	} else 
 	if (val >= elem2-200 && val < elem3-400 ) {
@@ -74,9 +68,6 @@
 		if (document.getElementById('tagline')) {
 			document.getElementById('tagline').style.visibility = "hidden";
 		}
-		if (document.getElementById('myPic')) {
-			document.getElementById('myPic').style.visibility = "visible";
-		}
 	} 
 	else {
 		if (document.getElementById('nav1')) {
@@ -93,9 +84,6 @@
 		}
 		if (document.getElementById('tagline')) {
 			document.getElementById('tagline').style.visibility = "hidden";
-		}
-		if (document.getElementById('myPic')) {
-			document.getElementById('myPic').style.visibility = "hidden";
-		}
+		}	
 	}
 }, 50);

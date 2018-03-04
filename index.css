@@ -120,13 +120,13 @@ header{
 #mail{
 	position: fixed;
 	left: 4%;
-	top: 55%;
+	top: 54%;
 }
 
 #file{
 	position: fixed;
-	left: 21%;
-	top: 45%;
+	left: 24%;
+	top: 47%;
 }
 
 #cloud{
@@ -135,22 +135,22 @@ header{
 	top: 10%;
 }
 
-#like{
+#camera{
 	position: fixed;
-	left: 12%;
+	left: 15%;
 	top: 26%;
 }
 
 #lock{
 	position: fixed;
-	left: 12%;
+	left: 10%;
 	top: 80%;
 }
 
-#camera{
+#bitCoin{
 	position: fixed;
 	left: 3%;
-	top: 6%;
+	top: 13%;
 }
 
 .intro{
@@ -483,7 +483,7 @@ p button{
 }
 
 .aboutMe{
-	margin: 0 20px;
+	margin: 0 20px 20px 20px;
 	padding: 20px;
 	min-height: 100vh;
 	background-color: white; /*#f1c930;*/
