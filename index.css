@@ -330,7 +330,7 @@ button:hover{
 	display: inline-flex;
 	flex-direction: column;
 	justify-content: center;
-	font-family:'Expletus Sans', cursive;/* 'Arvo', serif;*/
+	font-family: 'Expletus Sans', cursive;/* 'Arvo', serif;*/
 	color: black;
 	text-shadow: 2px 2px white;
 	font-size: 17px;
