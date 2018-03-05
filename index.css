@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-button {
+body::-webkit-scrollbar-button {
 	background-color: rgba(0,0,0,0);
 	height: 0.5em;
 }
@@ -134,42 +134,205 @@ header{
 	position: fixed;
 	left: 25%;
 	top: 77%;
+	-webkit-animation: myfirsta 5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirsta 5s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirsta {
+    0%   {left: 3%; top: 13%;}
+    16.66%  {left: 27%; top: 10%;}
+    33.32%  {left: 4%; top: 54%;}
+    49.98%  {left: 15%; top: 26%;}
+    66.64%  {left: 24%; top: 47%;}
+    83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}
+}
+
+@keyframes myfirsta {
+    0%   {left: 3%; top: 13%;}
+    16.66%  {left: 27%; top: 10%;}
+    33.32%  {left: 4%; top: 54%;}
+    49.98%  {left: 15%; top: 26%;}
+    66.64%  {left: 24%; top: 47%;}
+    83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}
 }
 
 #mail{
 	position: fixed;
 	left: 4%;
 	top: 54%;
+	-webkit-animation: myfirstb 1.6666s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstb 1.6666s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstb {
+    0%   {left: 3%; top: 13%;}
+    50%  {left: 27%; top: 10%;}
+    100%  {left: 4%; top: 54%;}
+    /*49.98%  {left: 15%; top: 26%;}
+    66.64%  {left: 24%; top: 47%;}
+    83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}*/
+}
+
+@keyframes myfirstb {
+    0%   {left: 3%; top: 13%;}
+    50%  {left: 27%; top: 10%;}
+    100%  {left: 4%; top: 54%;}
+   /* 49.98%  {left: 15%; top: 26%;}
+    66.64%  {left: 24%; top: 47%;}
+    83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}*/
 }
 
 #file{
 	position: fixed;
 	left: 24%;
 	top: 47%;
+	-webkit-animation: myfirstc 3.3333s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstc 3.3333s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstc {
+    0%   {left: 3%; top: 13%;}
+    25%  {left: 27%; top: 10%;}
+    50%  {left: 4%; top: 54%;}
+    75%  {left: 15%; top: 26%;}
+    100%  {left: 24%; top: 47%;}
+    /*83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}*/
+}
+
+@keyframes myfirstc {
+   	0%   {left: 3%; top: 13%;}
+    25%  {left: 27%; top: 10%;}
+    50%  {left: 4%; top: 54%;}
+    75%  {left: 15%; top: 26%;}
+    100%  {left: 24%; top: 47%;}
+    /*83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}*/
 }
 
 #cloud{
 	position: fixed;
 	left: 27%;
 	top: 10%;
+	-webkit-animation: myfirstd 0.8333s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstd 0.8333s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstd {
+    0%   {left: 3%; top: 13%;}
+    100%  {left: 27%; top: 10%;}
+    /*33.32%  {left: 4%; top: 54%;}
+    49.98%  {left: 15%; top: 26%;}
+    66.64%  {left: 24%; top: 47%;}
+    83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}*/
+}
+
+@keyframes myfirstd {
+    0%   {left: 3%; top: 13%;}
+    100%  {left: 27%; top: 10%;}
+   /* 33.32%  {left: 4%; top: 54%;}
+    49.98%  {left: 15%; top: 26%;}
+    66.64%  {left: 24%; top: 47%;}
+    83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}*/
 }
 
 #camera{
 	position: fixed;
 	left: 15%;
 	top: 26%;
+	-webkit-animation: myfirste 2.4999s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirste 2.4999s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirste {
+    0%   {left: 3%; top: 13%;}
+    33.33%  {left: 27%; top: 10%;}
+    66.66%  {left: 4%; top: 54%;}
+    100%  {left: 15%; top: 26%;}
+    /*66.64%  {left: 24%; top: 47%;}
+    83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}*/
+}
+
+@keyframes myfirste {
+    0%   {left: 3%; top: 13%;}
+    33.33%  {left: 27%; top: 10%;}
+    66.66%  {left: 4%; top: 54%;}
+    100%  {left: 15%; top: 26%;}
+    /*66.64%  {left: 24%; top: 47%;}
+    83.3%  {left: 10%; top: 80%;}
+    100% {left: 25%; top: 77%;}*/
 }
 
 #lock{
 	position: fixed;
 	left: 10%;
 	top: 80%;
+	-webkit-animation: myfirstf 4.1533s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstf 4.1533s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstf {
+    0%   {left: 3%; top: 13%;}
+    20%  {left: 27%; top: 10%;}
+    40%  {left: 4%; top: 54%;}
+    60%  {left: 15%; top: 26%;}
+    80%  {left: 24%; top: 47%;}
+    100%  {left: 10%; top: 80%;}
+    /*100% {left: 25%; top: 77%;}*/
+}
+
+@keyframes myfirstf {
+    0%   {left: 3%; top: 13%;}
+    20%  {left: 27%; top: 10%;}
+    40%  {left: 4%; top: 54%;}
+    60%  {left: 15%; top: 26%;}
+    80%  {left: 24%; top: 47%;}
+    100%  {left: 10%; top: 80%;}
+    /*100% {left: 25%; top: 77%;}*/
 }
 
 #bitCoin{
 	position: fixed;
 	left: 3%;
 	top: 13%;
+	-webkit-animation: myfirstg 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstg 1s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstg {
+    100%   {left: 3%; top: 13%;}
+}
+
+@keyframes myfirstg {
+    100%   {left: 3%; top: 13%;}
 }
 
 .intro{
@@ -210,6 +373,12 @@ header{
 
 
 .profession{
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	cursor: pointer;
+	border: none;
+	color: white;
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 52px;
 	position: relative;
@@ -218,9 +387,11 @@ header{
 	background-color: #666666;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
+	-ms-background-clip: text;
 	background-clip: text;
 	color: transparent;
-	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;}
+	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
 
 .tagline{
 	font-family: 'Pacifico', cursive;
