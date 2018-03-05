@@ -12,7 +12,7 @@ font-family: 'Acme', sans-serif;
 font-family: 'Expletus Sans', cursive;
 */
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar { 
     width: 0.9em;
 }
  
@@ -735,7 +735,7 @@ p button{
 .lastPicDiv{
 	display: flex;
 	justify-content: flex-end;
-	align-items: flex-end;
+	align-items: center;
 	height: 100vh;
 	width: 500px;
 }
@@ -818,3 +818,4 @@ p button{
 	position: relative;
 	left: 4%;
 }
+

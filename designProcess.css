@@ -7,7 +7,7 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.7); 
   outline: 1px solid slategrey;
   border-radius: 10px;
 }
@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
 
 body{
 	background-color: rgba(89, 171, 227, 0.65); /*rgba(191, 191, 191, 0);*/
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 	min-height: 100%;
 	background-image: url(images/innovation00.png);
 	background-attachment: fixed;
@@ -35,6 +35,21 @@ body{
 a{ 
 	text-decoration: none;
 	color: inherit;
+}
+
+
+iframe{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 95%;
+	width: 95%;
+	margin: 20px 20px 20px 20px;
+	border-color: black;
+	z-index: 10;
+	display: none;
 }
 
 .navigation{
@@ -106,14 +121,14 @@ a{
 	text-shadow: ;
 }
 
-img{
+.organize img{
 	width: 350px;
 	height: 175px;
 	margin: 10px;
 	border-radius: 10px;	
 }
 
-img:hover{
+.organize img:hover{
 	cursor: pointer;
 	transform: scale(1.1);
 }
@@ -130,18 +145,92 @@ img:hover{
 	background-color: rgba(0,0,0,0.7);
 }
 
-.txtTools{
-	font-family: 'Expletus Sans', cursive;;
-	font-size: 2em;
-	padding: 10px 0 0 0;
-	margin: 10px 0 0 0;
-	color: white;
+.diagram{
+	padding: 20px;
+	margin: 20px;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background-color: grey;	
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+.container{
+	border: 2px solid white;
+	padding: 0;
+	margin: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: relative;
+}
 
-@keyframes bake-pie {
-  from {
-    transform: rotate(0deg) translate3d(0, 0, 0);
-  }
+.toolImg{
+	width: 150px;
+	height: 150px;
+	margin: 0;
+	border-radius: 75px;
+}
+
+.txtTools {
+	float: left;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	background-color: rgba(0,0,0,0.7);
+	padding: 5px;
+	font-family: 'Expletus Sans', cursive;;
+	font-size: 1.5em;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.container:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#c1{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 2%;
+}
+
+#c2{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 2%;
+}
+
+#c3{
+	position: absolute;
+	left: 25%;
+	transform: translate(-25%);
+	bottom: 7%;
+}
+
+#c4{
+	position: absolute;
+	right: 25%;
+	transform: translate(25%);
+	bottom: 7%;
+}
+
+#c7{
+	position: absolute;
+	left: 35%;
+	transform: translate(-35%);
+	bottom: 7%;
+}
+
+#c6{
+	position: absolute;
+	right: 35%;
+	transform: translate(35%);
+	bottom: 7%;
 }
