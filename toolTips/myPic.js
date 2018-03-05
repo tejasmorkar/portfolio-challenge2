@@ -4,7 +4,7 @@
      $('#mypic').qtip({
          content: 'This Is Me!',
          style: {
-         	classes: 'qtip-youtube'
+         	classes: 'qtip-bootstrap'
          },
          position: {
              target: 'mouse', // Track the mouse as the positioning target
