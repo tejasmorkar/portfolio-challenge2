@@ -121,14 +121,14 @@ iframe{
 	text-shadow: ;
 }
 
-.organize img{
+.wrkflow{
 	width: 350px;
 	height: 175px;
 	margin: 10px;
 	border-radius: 10px;	
 }
 
-.organize img:hover{
+.wrkflow:hover{
 	cursor: pointer;
 	transform: scale(1.1);
 }
@@ -151,7 +151,6 @@ iframe{
 	position: relative;
 	width: 100%;
 	height: 500px;
-	background-color: grey;	
 }
 
 .container{
@@ -172,25 +171,16 @@ iframe{
 }
 
 .txtTools {
-	float: left;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 0;
-	background-color: rgba(0,0,0,0.7);
-	padding: 5px;
 	font-family: 'Expletus Sans', cursive;;
-	font-size: 1.5em;
+	font-size: 2.5em;
+	padding: 10px 0 0 0;
+	margin: 10px 0 0 0;
 	color: white;
-	font-weight: bolder;
-	text-align: center;
-	border-radius: 20px;
+	font-weight: normal;
 }
 
 .container:hover{
 	cursor: pointer;
-	transform: scale(1.1);
 }
 
 #c1{
@@ -205,32 +195,111 @@ iframe{
 	left: 50%;
 	transform: translate(-50%);
 	bottom: 2%;
+	-webkit-animation: myfirsta 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirsta 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirsta {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 50%; top: 70%;}
+}
+
+@keyframes myfirsta {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 50%; top: 70%;}
 }
 
 #c3{
 	position: absolute;
 	left: 25%;
 	transform: translate(-25%);
-	bottom: 7%;
+	bottom: 10%;
+	-webkit-animation: myfirstb 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstb 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstb {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 25%; top: 65%;}
+}
+
+@keyframes myfirstb {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 25%; top: 62%;}
 }
 
 #c4{
 	position: absolute;
 	right: 25%;
 	transform: translate(25%);
-	bottom: 7%;
+	bottom: 10%;
+	-webkit-animation: myfirstc 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstc 3s;
+    animation-direction: normal;
 }
 
-#c7{
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstc {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 75%; top: 62%;}
+}
+
+@keyframes myfirstc {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 63%; top: 62%;}
+}
+
+#c5{
 	position: absolute;
-	left: 35%;
-	transform: translate(-35%);
-	bottom: 7%;
+	left: 7%;
+	transform: translate(-7%);
+	bottom: 45%;
+	-webkit-animation: myfirstd 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstd 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstd {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 7%; top: 26%;}
+}
+
+@keyframes myfirstd {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 7%; top: 26%;}
 }
 
 #c6{
 	position: absolute;
-	right: 35%;
-	transform: translate(35%);
-	bottom: 7%;
+	right: 7%;
+	transform: translate(7%);
+	bottom: 45%;
+	-webkit-animation: myfirste 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirste 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirste {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 80.6%; top: 26.6%;}
+}
+
+@keyframes myfirste {
+    0%   {left: 50%; top: 2%;}
+    100% {left: 80.6%; top: 26.6%;}
+}
+
+.container:hover .toolImg{
+	transform : scale(1.1);
 }

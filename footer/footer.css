@@ -52,12 +52,28 @@
 input[type=email] {
 	margin: 5px;
 	padding: 12px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 	font-family: 'Expletus Sans', cursive;
 	width: 50px;
 	-webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     border-color: black;
     border-width: 0.1em;
+    font-size: 1em;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
 }
 
 input[type=email]:hover {
@@ -66,6 +82,7 @@ input[type=email]:hover {
 
 input[type=email]:focus {
 	cursor: text;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 	width: 200px;
 	border-color: black;
     border-width: 0.15em;
