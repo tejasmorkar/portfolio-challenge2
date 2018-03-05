@@ -21,8 +21,14 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.7);
   outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+	background-color: rgba(0,0,0,0);
+	height: 0.5em;
 }
 
 *{
