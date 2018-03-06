@@ -1,0 +1,21 @@
+.bgm{
+	background: gray url(../images/bgk01.png) repeat 0 0;
+	box-sizing: border-box;
+	-webkit-animation: slide 20s linear infinite;
+}
+
+	@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+.bghm:hover{
+	background: gray url(../images/bgk01.png) repeat 0 0;
+	box-sizing: border-box;
+	-webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}

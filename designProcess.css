@@ -97,6 +97,8 @@ iframe{
 
 .myDesignProcess{
 	min-height: 100vh;
+	margin: 120px 20px 20px 20px;
+	border-radius: 50px;
 }
 
 .workFlow{
@@ -106,8 +108,8 @@ iframe{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
-	margin: 120px auto 20px auto;
+	width: 100%;
+	margin: 0;
 	background-color: rgba(0,0,0,0.7);
 }
 
@@ -133,6 +135,14 @@ iframe{
 	transform: scale(1.1);
 }
 
+#tlls {
+	margin: 20px 20px 20px 20px;
+	padding: 0;
+	background-color: white; /*#f1c930;*/
+	z-index: 2;
+	border-radius: 50px;
+}
+
 .tools{
 	border-radius: 50px;
 	display: flex;
@@ -140,8 +150,8 @@ iframe{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
-	margin: 50px auto 20px auto;
+	width: 100%;
+	margin: auto;
 	background-color: rgba(0,0,0,0.7);
 }
 
@@ -150,7 +160,7 @@ iframe{
 	margin: 20px;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 300px;
 }
 
 .container{

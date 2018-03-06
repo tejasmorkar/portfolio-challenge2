@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
- 
+  
 body::-webkit-scrollbar-thumb {
   background-color: rgba(0,0,0,0.7);
   outline: 1px solid slategrey;
@@ -464,6 +464,8 @@ header{
 
 .myDesignProcess{
 	min-height: 100vh;
+	margin: 0 20px;
+	border-radius: 50px;
 }
 
 .workFlow{
@@ -473,8 +475,8 @@ header{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 96%;
-	margin: 0 20px;
+	width: 100%;
+	margin: 0;
 	background-color: rgba(0,0,0,0.7);
 }
 
@@ -512,12 +514,17 @@ header{
 
 .tab1 {
     overflow: hidden;
-    background-color: #FFFBBD;
+    background-color: rgba(220,220,220,0.85);
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.7);
 }
 
 button{
 	font-size: 25px;
-	color: black;
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
 	font-family: 'Expletus Sans', cursive;/*'Berkshire Swash', cursive;*/
 	font-weight: 900;
 }
@@ -574,7 +581,7 @@ button:hover{
 .round div{
 	margin: 15px;
 	border-radius: 150px;
-	box-shadow: 8px 8px rgba(164, 164, 168, 0.75);
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.7);
 	transition: all .2s ease-in-out;
 }
 
@@ -740,7 +747,7 @@ p button{
 .mySuccess .round div{
 	margin: 15px;
 	border-radius: 150px;
-	box-shadow: 8px 8px rgba(20,20,20,0.2);
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.7);	
 	transition: all .2s ease-in-out;
 }
 
@@ -757,6 +764,13 @@ p button{
 	top: 0%;
 }
 
+#toolsBg{
+	margin: 20px 20px 20px 20px;
+	padding: 0;
+	background-color: white; /*#f1c930;*/
+	z-index: 2;
+	border-radius: 50px;
+}
 
 .tools{
 	border-radius: 50px;
@@ -765,8 +779,8 @@ p button{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
-	margin: 50px auto 20px auto;
+	width: 100%;
+	margin: auto;
 	background-color: rgba(0,0,0,0.7);
 }
 
@@ -775,7 +789,7 @@ p button{
 	margin: 20px;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 300px;
 }
 
 .container{
@@ -817,6 +831,7 @@ p button{
 	left: 50%;
 	transform: translate(-50%);
 	top: 2%;
+	z-index: 1;
 }
 
 #c2{
@@ -836,12 +851,12 @@ p button{
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirsta {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 50%; top: 70%;}
+    100% {left: 50%; top: 53%;}
 }
 
 @keyframes myfirsta {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 50%; top: 70%;}
+    100% {left: 50%; top: 53%;}
 }
 
 #c3{
@@ -861,12 +876,12 @@ p button{
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirstb {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 25%; top: 65%;}
+    100% {left: 25%; top: 45%;}
 }
 
 @keyframes myfirstb {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 25%; top: 62%;}
+    100% {left: 25%; top: 45%;}
 }
 
 #c4{
@@ -886,12 +901,12 @@ p button{
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirstc {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 75%; top: 62%;}
+    100% {left: 75%; top: 45%;}
 }
 
 @keyframes myfirstc {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 63%; top: 62%;}
+    100% {left: 63%; top: 45%;}
 }
 
 #c5{
@@ -911,12 +926,12 @@ p button{
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirstd {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 7%; top: 26%;}
+    100% {left: 7%; top: 10%;}
 }
 
 @keyframes myfirstd {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 7%; top: 26%;}
+    100% {left: 7%; top: 10%;}
 }
 
 #c6{
@@ -936,12 +951,12 @@ p button{
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirste {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 80.6%; top: 26.6%;}
+    100% {left: 80.6%; top: 10%;}
 }
 
 @keyframes myfirste {
     0%   {left: 50%; transform: translate(-50%); top: 2%;}
-    100% {left: 80.6%; top: 26.6%;}
+    100% {left: 80.6%; top: 10%;}
 }
 
 .container:hover .toolImg{
@@ -1095,4 +1110,5 @@ p button{
 	position: relative;
 	left: 4%;
 }
+
 
