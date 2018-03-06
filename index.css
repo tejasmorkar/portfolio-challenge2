@@ -335,6 +335,8 @@ header{
     100%   {left: 3%; top: 13%;}
 }
 
+
+
 .intro{
 	position: fixed;
 	left: 50%;
@@ -415,6 +417,89 @@ header{
     display: inline-block;
     margin: 0 0 0 4px;
 }
+
+
+.navigation{
+	position: fixed;
+	right: 0%;
+	top: 1%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 10px;
+	margin: auto;
+	font-family: 'Expletus Sans', cursive;
+	font-size: 30px;
+	background-color: white;
+	opacity: 0.95;
+	width: 100%;
+	z-index: 1;
+}
+
+
+.medium{
+	width: auto;
+    position: absolute;
+    left: 2%;
+}
+
+.medium:hover{
+	font-size: 1.1em;
+	color: rgb(0, 0, 0);
+	text-shadow: 0 0.5px 0 #ccc, 
+				0 1px 0 #c9c9c9,
+				0 1.5px 0 #bbb,
+				0 2px 0 #b9b9b9,
+				0 2.5px 0 #aaa,
+				0 3px 0.5px rgba(0,0,0,.1),
+				0 0 2.5px rgba(0,0,0,.1),
+				0 0.5px 1.5px rgba(0,0,0,.3),
+				0 1.5px 2.5px rgba(0,0,0,.2),
+				0 2.5px 5px rgba(0,0,0,.25),
+				0 5px 5px rgba(0,0,0,.2),
+				0 10px 10px rgba(0,0,0,.15);
+	cursor: pointer;
+}
+
+.myDesignProcess{
+	min-height: 100vh;
+}
+
+.workFlow{
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 96%;
+	margin: 0 20px;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.tag{
+	font-family: 'Expletus Sans', cursive;;
+	font-size: 2em;
+	padding: 10px 0 0 0;
+	margin: 10px 0 0 0;
+	color: white;
+	font-weight: bolder;
+	text-shadow: ;
+}
+
+.wrkflow{
+	width: 350px;
+	height: 175px;
+	margin: 10px;
+	border-radius: 10px;	
+}
+
+.wrkflow:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
 
 .myProjects{
 	margin: 0 20px;
@@ -671,6 +756,198 @@ p button{
 	position: absolute;
 	top: 0%;
 }
+
+
+.tools{
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: 50px auto 20px auto;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.diagram{
+	padding: 20px;
+	margin: 20px;
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.container{
+	border: 2px solid white;
+	padding: 0;
+	margin: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: relative;
+}
+
+.toolImg{
+	width: 150px;
+	height: 150px;
+	margin: 0;
+	border-radius: 75px;
+}
+
+.txtTools {
+	font-family: 'Expletus Sans', cursive;;
+	font-size: 2.5em;
+	padding: 10px 0 0 0;
+	margin: 10px 0 0 0;
+	color: white;
+	font-weight: normal;
+}
+
+.container:hover{
+	cursor: pointer;
+}
+
+.tools:hover{
+	cursor: pointer;
+}
+
+#c1{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 2%;
+}
+
+#c2{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 2%;
+}
+
+.tools:hover #c2{
+	-webkit-animation: myfirsta 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirsta 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirsta {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 50%; top: 70%;}
+}
+
+@keyframes myfirsta {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 50%; top: 70%;}
+}
+
+#c3{
+	position: absolute;
+	left: 25%;
+	transform: translate(-25%);
+	bottom: 10%;
+}
+
+.tools:hover #c3{
+	-webkit-animation: myfirstb 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstb 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstb {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 25%; top: 65%;}
+}
+
+@keyframes myfirstb {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 25%; top: 62%;}
+}
+
+#c4{
+	position: absolute;
+	right: 25%;
+	transform: translate(25%);
+	bottom: 10%;
+}
+
+.tools:hover #c4{
+	-webkit-animation: myfirstc 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstc 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstc {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 75%; top: 62%;}
+}
+
+@keyframes myfirstc {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 63%; top: 62%;}
+}
+
+#c5{
+	position: absolute;
+	left: 7%;
+	transform: translate(-7%);
+	bottom: 45%;
+}
+
+.tools:hover #c5{
+	-webkit-animation: myfirstd 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirstd 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirstd {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 7%; top: 26%;}
+}
+
+@keyframes myfirstd {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 7%; top: 26%;}
+}
+
+#c6{
+	position: absolute;
+	right: 7%;
+	transform: translate(7%);
+	bottom: 45%;
+}
+
+.tools:hover #c6{
+	-webkit-animation: myfirste 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirste 3s;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirste {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 80.6%; top: 26.6%;}
+}
+
+@keyframes myfirste {
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
+    100% {left: 80.6%; top: 26.6%;}
+}
+
+.container:hover .toolImg{
+	transform : scale(1.1);
+}
+
 
 .aboutMe{
 	margin: 0 20px 20px 20px;

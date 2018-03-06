@@ -183,6 +183,10 @@ iframe{
 	cursor: pointer;
 }
 
+.tools:hover{
+	cursor: pointer;
+}
+
 #c1{
 	position: absolute;
 	left: 50%;
@@ -195,6 +199,9 @@ iframe{
 	left: 50%;
 	transform: translate(-50%);
 	bottom: 2%;
+}
+
+.tools:hover #c2{
 	-webkit-animation: myfirsta 3s; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
     animation: myfirsta 3s;
@@ -203,12 +210,12 @@ iframe{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirsta {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 50%; top: 70%;}
 }
 
 @keyframes myfirsta {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 50%; top: 70%;}
 }
 
@@ -217,6 +224,9 @@ iframe{
 	left: 25%;
 	transform: translate(-25%);
 	bottom: 10%;
+}
+
+.tools:hover #c3{
 	-webkit-animation: myfirstb 3s; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
     animation: myfirstb 3s;
@@ -225,12 +235,12 @@ iframe{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirstb {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 25%; top: 65%;}
 }
 
 @keyframes myfirstb {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 25%; top: 62%;}
 }
 
@@ -239,6 +249,9 @@ iframe{
 	right: 25%;
 	transform: translate(25%);
 	bottom: 10%;
+}
+
+.tools:hover #c4{
 	-webkit-animation: myfirstc 3s; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
     animation: myfirstc 3s;
@@ -247,12 +260,12 @@ iframe{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirstc {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 75%; top: 62%;}
 }
 
 @keyframes myfirstc {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 63%; top: 62%;}
 }
 
@@ -261,6 +274,9 @@ iframe{
 	left: 7%;
 	transform: translate(-7%);
 	bottom: 45%;
+}
+
+.tools:hover #c5{
 	-webkit-animation: myfirstd 3s; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
     animation: myfirstd 3s;
@@ -269,12 +285,12 @@ iframe{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirstd {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 7%; top: 26%;}
 }
 
 @keyframes myfirstd {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 7%; top: 26%;}
 }
 
@@ -283,6 +299,9 @@ iframe{
 	right: 7%;
 	transform: translate(7%);
 	bottom: 45%;
+}
+
+.tools:hover #c6{
 	-webkit-animation: myfirste 3s; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
     animation: myfirste 3s;
@@ -291,12 +310,12 @@ iframe{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirste {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 80.6%; top: 26.6%;}
 }
 
 @keyframes myfirste {
-    0%   {left: 50%; top: 2%;}
+    0%   {left: 50%; transform: translate(-50%); top: 2%;}
     100% {left: 80.6%; top: 26.6%;}
 }
 
