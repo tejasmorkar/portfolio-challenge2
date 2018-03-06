@@ -514,7 +514,7 @@ header{
 
 .tab1 {
     overflow: hidden;
-    background-color: rgba(220,220,220,0.85);
+    background-color: white;
     border-radius: 50px;
     padding: 10px;
     box-shadow: 2px 1px 1px rgba(0,0,0,0.7);
@@ -522,7 +522,7 @@ header{
 
 button{
 	font-size: 25px;
-	color: white;
+	color: black;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
 	font-family: 'Expletus Sans', cursive;/*'Berkshire Swash', cursive;*/
